@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
             "http://560057.youcanlearnit.net/services/json/itemsfeed.php";
     TextView output;
 
+    public static boolean networkOK;
+
     private BroadcastReceiver mBroadcastReciever = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -38,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         //Create more  LocalboadcastManager and register for more number of messages which you want
         LocalBroadcastManager.getInstance(getApplicationContext())
                 .registerReceiver(mBroadcastReciever,new IntentFilter(MyService.MY_SERVICE_MSG));
+
+        networkOK = NetworkHelper.hasNetworkAccess(this);
+        output.append("Network Status : "+networkOK);
     }
 
     //Unregister the BroadcastManager to avoid memory leaks

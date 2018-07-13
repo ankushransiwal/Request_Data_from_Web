@@ -10,6 +10,8 @@ public class MyService extends IntentService {
 
     public static final String TAG = "MyService";
 
+
+
     public static final String MY_SERVICE_MSG = "myServiceMessage";
     public static final String MY_SERVICE_PAYLOAD = "myServicePayload";
     /**
