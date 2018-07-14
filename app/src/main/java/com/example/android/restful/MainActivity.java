@@ -16,27 +16,31 @@ import com.example.android.restful.model.DataItem;
 import com.example.android.restful.services.MyService;
 import com.example.android.restful.utils.NetworkHelper;
 
+import static android.R.id.message;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String JSON_URL =
-            "http://560057.youcanlearnit.net/services/json/itemsfeed.php";
+            "http://560057.youcanlearnit.net/secured/json/itemsfeed.php";
+    private static final String XML_URL =
+            "http://560057.youcanlearnit.net/services/xml/itemsfeed.php";
+
+    private boolean networkOk;
     TextView output;
 
-    public static boolean networkOK;
-
-    private BroadcastReceiver mBroadcastReciever = new BroadcastReceiver() {
+    private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            //We are no longer just receivig a string instead an Dataitems array object
-            //String message = intent.getStringExtra(MyService.MY_SERVICE_PAYLOAD);
-
-            DataItem[] dataItems = (DataItem[]) intent.getParcelableArrayExtra(MyService.MY_SERVICE_PAYLOAD);
-
-            //Print all the names from each itemlist
-            for(int i = 0; i < dataItems.length;i++){
-                output.append(dataItems[i].getItemName() + "\n");
+            if (intent.hasExtra(MyService.MY_SERVICE_PAYLOAD)) {
+                DataItem[] dataItems = (DataItem[]) intent
+                        .getParcelableArrayExtra(MyService.MY_SERVICE_PAYLOAD);
+                for (DataItem item : dataItems) {
+                    output.append(item.getItemName() + "\n");
+                }
+            } else if (intent.hasExtra(MyService.MY_SERVICE_EXCEPTION)){
+                String message = intent.getStringExtra(MyService.MY_SERVICE_EXCEPTION);
+                Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
             }
-
         }
     };
 
@@ -47,37 +51,31 @@ public class MainActivity extends AppCompatActivity {
 
         output = (TextView) findViewById(R.id.output);
 
-        //Create more  LocalboadcastManager and register for more number of messages which you want
         LocalBroadcastManager.getInstance(getApplicationContext())
-                .registerReceiver(mBroadcastReciever,new IntentFilter(MyService.MY_SERVICE_MSG));
+                .registerReceiver(mBroadcastReceiver,
+                        new IntentFilter(MyService.MY_SERVICE_MESSAGE));
 
-        networkOK = NetworkHelper.hasNetworkAccess(this);
-        output.append("Network Status : "+networkOK);
+        networkOk = NetworkHelper.hasNetworkAccess(this);
+        output.append("Network ok: " + networkOk);
     }
 
-    //Unregister the BroadcastManager to avoid memory leaks
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
         LocalBroadcastManager.getInstance(getApplicationContext())
-                .unregisterReceiver(mBroadcastReciever);
+                .unregisterReceiver(mBroadcastReceiver);
     }
 
     public void runClickHandler(View view) {
 
-        if(networkOK){
-            Intent i = new Intent(this,MyService.class);
-            i.setData(Uri.parse(JSON_URL));
-            startService(i);
-
+        if (networkOk) {
+            Intent intent = new Intent(this, MyService.class);
+            intent.setData(Uri.parse(JSON_URL));
+            startService(intent);
+        } else {
+            Toast.makeText(this, "Network not available!", Toast.LENGTH_SHORT).show();
         }
-        else{
-            Toast.makeText(this, "Network not available", Toast.LENGTH_SHORT).show();
-        }
-
-
-
-
     }
 
     public void clearClickHandler(View view) {

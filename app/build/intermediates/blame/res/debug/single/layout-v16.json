@@ -4,6 +4,10 @@
         "source": "E:\\Android Studio Projects\\Lynda_Androd_Apps_RESTful_update\\Ch03\\03_01\\Permissions\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
+        "merged": "E:\\Android Studio Projects\\Request_Data_from_Web\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
+        "source": "E:\\Android Studio Projects\\Request_Data_from_Web\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v16\\notification_template_custom_big.xml"
+    },
+    {
         "merged": "E:\\Android Studio Projects\\Permissions\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
         "source": "E:\\Android Studio Projects\\Permissions\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v16\\notification_template_custom_big.xml"
     }

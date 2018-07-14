@@ -1,5 +1,7 @@
 package com.example.android.restful.utils;
 
+import android.widget.Toast;
+
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -38,15 +40,11 @@ public class HttpHelper {
             }
             is = conn.getInputStream();
             return readStream(is);
-
-        } catch (IOException e) {
-            e.printStackTrace();
         } finally {
             if (is != null) {
                 is.close();
             }
         }
-        return null;
     }
 
     /**

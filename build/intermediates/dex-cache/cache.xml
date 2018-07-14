@@ -3,39 +3,66 @@
 
     <item
         is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_08eb7e655b87c223897522a6b73f39201c9e2c6a.jar" />
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_4047ef8012c7c63a58894a9508e8b24298716d0d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_fd847ce690363648f7486d5a7f729f042890dcab.jar" />
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_2d7d467b7ea2938accb6c9de81d9cc707f143252.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_8b62eaf031762586d0a06e1e46dfb149fba426ac.jar" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_6f02bb0a7f2c9e4464fd59da254e2623781dc661.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_9c69b8c552d7600a332af821c71e58e55a9c2a06.jar" />
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_d73f6c7784b6e7a87fc7dadc1cda42665fb7e045.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_8a9de5baa840e7c0bbc5c7322071617e3e2d59e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_69fbeb09df6b20b72d8e5b3b83f89ed151e11dba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_7bd2d855018c4080118e5e80e5b60642084a56d3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -44,7 +71,7 @@
         optimize="true"
         revision="24.0.3"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_bc8c9be250954db011ea40a3811f5fcb54b981c1.jar" />
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_bc8c9be250954db011ea40a3811f5fcb54b981c1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -53,52 +80,25 @@
         optimize="true"
         revision="24.0.3"
         sha1="f645ed69d595b24d4cf8b3fbb64cc505bede8829">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\gson-2.8.5_eebfd0a5037067f4ebe671333c325ae80b19cb2e.jar" />
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\gson-2.8.5_eebfd0a5037067f4ebe671333c325ae80b19cb2e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_7d9a4363b3ba0f66fa7efe92293c7a13e605b6ef.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_8a9fbd52f1773d825f991c6ff59084efb831fc07.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_784e69b09f81cde6dfc3c32c98c67b8222074bff.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_c758eecec2e352cf7c26688b9192908cace73b0b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_fd71ad34c00bac70c40e3c62dbd9c61b77baf67d.jar" />
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_32b4a844468f54e635e20436767f11f4f4e9d9af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="E:\Android Studio Projects\Request_Data_from_Web\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_99dbd09b9626bc39ec4300631a46bd3fd87553c6.jar" />
     </item>
 
 </items>
