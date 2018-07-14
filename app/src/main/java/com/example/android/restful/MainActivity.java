@@ -31,11 +31,15 @@ public class MainActivity extends AppCompatActivity {
     private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+            //We are no longer just receivig a string instead an Dataitems array object
+            //String message = intent.getStringExtra(MyService.MY_SERVICE_PAYLOAD);
+
             if (intent.hasExtra(MyService.MY_SERVICE_PAYLOAD)) {
                 DataItem[] dataItems = (DataItem[]) intent
                         .getParcelableArrayExtra(MyService.MY_SERVICE_PAYLOAD);
-                for (DataItem item : dataItems) {
-                    output.append(item.getItemName() + "\n");
+                //Print all the names from each itemlist
+                for(int i = 0; i < dataItems.length;i++){
+                    output.append(dataItems[i].getItemName() + "\n");
                 }
             } else if (intent.hasExtra(MyService.MY_SERVICE_EXCEPTION)){
                 String message = intent.getStringExtra(MyService.MY_SERVICE_EXCEPTION);
@@ -51,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         output = (TextView) findViewById(R.id.output);
 
+        //Create more  LocalboadcastManager and register for more number of messages which you want
         LocalBroadcastManager.getInstance(getApplicationContext())
                 .registerReceiver(mBroadcastReceiver,
                         new IntentFilter(MyService.MY_SERVICE_MESSAGE));
@@ -59,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         output.append("Network ok: " + networkOk);
     }
 
+
+    //Unregister the BroadcastManager to avoid memory leaks
     @Override
     protected void onDestroy() {
         super.onDestroy();
