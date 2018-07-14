@@ -10,6 +10,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.android.restful.services.MyService;
 import com.example.android.restful.utils.NetworkHelper;
@@ -54,11 +55,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void runClickHandler(View view) {
-        Intent i = new Intent(this,MyService.class);
-        i.setData(Uri.parse(JSON_URL));
-        startService(i);
-        startService(i);
-        startService(i);
+
+        if(networkOK){
+            Intent i = new Intent(this,MyService.class);
+            i.setData(Uri.parse(JSON_URL));
+            startService(i);
+
+        }
+        else{
+            Toast.makeText(this, "Network not available", Toast.LENGTH_SHORT).show();
+        }
+
+
+
 
     }
 

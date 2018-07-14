@@ -6,6 +6,10 @@ import android.net.Uri;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
+import com.example.android.restful.utils.HttpHelper;
+
+import java.io.IOException;
+
 public class MyService extends IntentService {
 
     public static final String TAG = "MyService";
@@ -29,14 +33,19 @@ public class MyService extends IntentService {
         Uri uri = intent.getData();
         Log.i(TAG, "onHandleIntent: " + uri.toString());
 
+        //Getting the response in background thread
+        String response;
         try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
+            response = HttpHelper.downloadUrl(uri.toString());
+        } catch (IOException e) {
             e.printStackTrace();
+            return;
         }
 
         Intent messageIntent = new Intent(MY_SERVICE_MSG);
-        messageIntent.putExtra(MY_SERVICE_PAYLOAD,"Service all done!");
+
+        //Passing the response we got instead of dummy data
+        messageIntent.putExtra(MY_SERVICE_PAYLOAD,response);
 
         //Make sure to include the one LocalBroadcastManager with the context one
         LocalBroadcastManager manager =
