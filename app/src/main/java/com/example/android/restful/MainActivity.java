@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.android.restful.model.DataItem;
 import com.example.android.restful.services.MyService;
 import com.example.android.restful.utils.NetworkHelper;
 
@@ -26,8 +27,16 @@ public class MainActivity extends AppCompatActivity {
     private BroadcastReceiver mBroadcastReciever = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            String message = intent.getStringExtra(MyService.MY_SERVICE_PAYLOAD);
-            output.append(message + "\n");
+            //We are no longer just receivig a string instead an Dataitems array object
+            //String message = intent.getStringExtra(MyService.MY_SERVICE_PAYLOAD);
+
+            DataItem[] dataItems = (DataItem[]) intent.getParcelableArrayExtra(MyService.MY_SERVICE_PAYLOAD);
+
+            //Print all the names from each itemlist
+            for(int i = 0; i < dataItems.length;i++){
+                output.append(dataItems[i].getItemName() + "\n");
+            }
+
         }
     };
 

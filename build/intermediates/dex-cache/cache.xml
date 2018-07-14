@@ -48,6 +48,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\ankus\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.5\f645ed69d595b24d4cf8b3fbb64cc505bede8829\gson-2.8.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f645ed69d595b24d4cf8b3fbb64cc505bede8829">
+        <dex dex="E:\Android Studio Projects\Permissions\app\build\intermediates\pre-dexed\debug\gson-2.8.5_eebfd0a5037067f4ebe671333c325ae80b19cb2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\Android Studio Projects\Permissions\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
